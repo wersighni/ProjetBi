@@ -1,0 +1,17 @@
+.welcome-title {
+  text-align: center;
+  color: #0d6efd;        /* bleu Bootstrap */
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.welcome-title {
+  text-align: center;
+  color: #6610f2;   /* violet BI */
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}

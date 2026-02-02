@@ -1,0 +1,46 @@
+
+
+<!-- Input couleur du titre -->
+<input
+  type="text"
+  class="form-control mb-3"
+  placeholder="Couleur du titre (ex: red, blue)"
+  [(ngModel)]="titleColor" />
+
+<!-- Titre -->
+<h2 class="welcome-title" [style.color]="titleColor">
+  Welcome BI
+</h2>
+
+<!-- Nombre d'éléments -->
+<p>Nombre d'éléments: {{ home.length }}</p>
+
+<!-- Tableau -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prix</th>
+      <th>Quantité</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let p of home">
+      <td>{{ p.id }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.price }}</td>
+      <td>{{ p.quantity }}</td>
+      <td>
+        <button
+          class="btn btn-primary"
+          [disabled]="p.quantity == 0"
+          (click)="buy(p)">
+          Acheter
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
