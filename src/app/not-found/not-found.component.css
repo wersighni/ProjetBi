@@ -1,0 +1,145 @@
+:host {
+  display: block;
+}
+
+.page {
+  min-height: calc(100vh - 0px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(99, 102, 241, 0.20), transparent 60%),
+              radial-gradient(900px 500px at 80% 20%, rgba(236, 72, 153, 0.18), transparent 55%),
+              radial-gradient(1000px 700px at 60% 100%, rgba(34, 197, 94, 0.12), transparent 60%),
+              #0b1020;
+  color: #e8ecff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.25;
+  pointer-events: none;
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 70%);
+}
+
+.bg-orb {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 999px;
+  filter: blur(60px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.orb1 {
+  left: -120px;
+  top: -120px;
+  background: radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.9), rgba(99, 102, 241, 0) 60%);
+}
+
+.orb2 {
+  right: -140px;
+  bottom: -140px;
+  background: radial-gradient(circle at 30% 30%, rgba(236, 72, 153, 0.85), rgba(236, 72, 153, 0) 60%);
+}
+
+.card {
+  position: relative;
+  width: min(720px, 100%);
+  padding: 28px 26px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #0b1020;
+  background: linear-gradient(90deg, rgba(99,102,241,1), rgba(236,72,153,1));
+}
+
+h1 {
+  margin: 14px 0 8px;
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.15;
+}
+
+p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(232, 236, 255, 0.82);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+.primary {
+  color: #0b1020;
+  background: linear-gradient(90deg, rgba(99,102,241,1), rgba(236,72,153,1));
+  border: none;
+}
+
+.ghost {
+  color: rgba(232, 236, 255, 0.9);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hint {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.20);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(232, 236, 255, 0.72);
+  font-size: 13px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.95);
+  box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.12);
+}

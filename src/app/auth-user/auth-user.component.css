@@ -1,0 +1,50 @@
+.auth-container {
+  width: 350px;
+  margin: 80px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ccc;
+  background: #f8f9fa;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login {
+  background: #2f74c0;
+  color: white;
+}
+
+.btn-login:disabled {
+  background: #9bbce6;     /* couleur claire */
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.btn-register {
+  background: #4caf50;
+  color: white;
+}
